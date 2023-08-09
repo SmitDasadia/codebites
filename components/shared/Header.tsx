@@ -1,11 +1,17 @@
-"use client"
+"use client";
 import React from "react";
-import { OrganizationSwitcher, SignedIn, SignOutButton,useAuth } from "@clerk/nextjs";
+import {
+  OrganizationSwitcher,
+  SignedIn,
+  SignOutButton,
+  useAuth,
+} from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
+import { dark } from "@clerk/themes";
 
-import { FiLogOut } from 'react-icons/fi';
+import { FiLogOut } from "react-icons/fi";
 
 const Header = () => {
   const router = useRouter();
@@ -41,9 +47,9 @@ const Header = () => {
 
         <OrganizationSwitcher
           appearance={{
+            baseTheme: dark,
             elements: {
               organizationSwitcherTrigger: "py-2 px-4",
-              
             },
           }}
         />
