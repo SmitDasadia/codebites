@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   OrganizationSwitcher,
   SignedIn,
   SignOutButton,
   useAuth,
+  useUser
 } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,6 +16,9 @@ import { FiLogOut } from "react-icons/fi";
 
 const Header = () => {
   const router = useRouter();
+  const { isLoaded, isSignedIn, user } = useUser();
+ 
+
   return (
     <nav className="topbar">
       <Link href="/" className="flex items-center gap-4">
@@ -30,6 +34,10 @@ const Header = () => {
           CodeBites
         </p>
       </Link>
+
+      <div>
+        {user?.firstName}
+      </div>
 
       <div className="flex items-center gap-1">
         <div className="block md:hidden">

@@ -1,8 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+
+  
+}
+
+module.exports = nextConfig
+module.exports = {
   experimental: {
     serverActions: true,
     serverComponentsExternalPackages: ["mongoose"],
+  },
+  images: {
+    domains: ['cdn-icons-png.flaticon.com'],
   },
   images: {
     remotePatterns: [
@@ -22,13 +31,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "placehold.co",
       },
+      {
+        protocol: "https",
+        hostname: "cdn-icons-png.flaticon.com",
+      },
     ],
   },
-}
-
-module.exports = nextConfig
-module.exports = {
-    images: {
-      domains: ['cdn-icons-png.flaticon.com'],
-    },
-  };
+};

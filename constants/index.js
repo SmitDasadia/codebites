@@ -21,8 +21,8 @@ export const sidebarLinks = [
   },
   {
     icon: <FaEdit />,
-    route: "/create-thread",
-    label: "Create Thread",
+    route: "/create-bites",
+    label: "Create Bites",
   },
   {
     icon: <FaUsers />,
