@@ -23,9 +23,6 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-      <head>
-      <link rel="icon" type="image/png" href="/favicon.png" />
-      </head>
         <body className={`${inter.className} bg-dark-1`}>
           <Header />
           <main className="flex flex-row">
