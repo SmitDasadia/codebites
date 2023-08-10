@@ -37,13 +37,13 @@ export const sidebarLinks = [
 ];
 
 export const profileTabs = [
-  { value: "threads", label: "Threads", icon: <FaComment /> },
+  { value: "bites", label: "Bites", icon: <FaComment /> },
   { value: "replies", label: "Replies", icon: <FaUserFriends /> },
   { value: "tagged", label: "Tagged", icon: <FaTags /> },
 ];
 
 export const communityTabs = [
-  { value: "threads", label: "Threads", icon: <FaComment /> },
+  { value: "bites", label: "Bites", icon: <FaComment /> },
   { value: "members", label: "Members", icon: <FaUserFriends /> },
   { value: "requests", label: "Requests", icon: <FaUserFriends /> }, // You might want to choose an appropriate icon for requests
 ];

@@ -32,7 +32,7 @@ export async function createBites({ text, author, communityId, path }: Params
 
     // Update User model
     await User.findByIdAndUpdate(author, {
-      $push: { bites: createdBites._id },
+      $push: { Bites: createdBites._id },
     });
 
    
