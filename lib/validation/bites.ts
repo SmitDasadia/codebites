@@ -6,5 +6,5 @@ export const BitesValidation = z.object({
 });
 
 export const CommentValidation = z.object({
-  Bites: z.string().nonempty().min(3, { message: "Minimum 3 characters." }),
+  bites: z.string().nonempty().min(3, { message: "Minimum 3 characters." }),
 });
