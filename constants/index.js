@@ -29,11 +29,11 @@ export const sidebarLinks = [
     route: "/communities",
     label: "Communities",
   },
-  // {
-  //   icon: <FaUser />,
-  //   route: "/profile",
-  //   label: "Profile",
-  // },
+  {
+    icon: <FaUser />,
+    route: "/profile",
+    label: "Profile",
+  },
 ];
 
 export const profileTabs = [
