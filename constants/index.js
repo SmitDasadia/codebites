@@ -5,32 +5,33 @@ import { FaHome, FaSearch, FaHeart, FaEdit, FaUsers, FaUser, FaComment, FaUserFr
 
 export const sidebarLinks = [
   {
-    icon: <FaHome />,
+    icon: <FaHome size={20}/>,
     route: "/",
     label: "Home",
   },
   {
-    icon: <FaSearch />,
+    icon: <FaSearch size={20}/>,
     route: "/search",
     label: "Search",
   },
   {
-    icon: <FaHeart />,
-    route: "/activity",
-    label: "Activity",
-  },
-  {
-    icon: <FaEdit />,
+    icon: <FaEdit size={20}/>,
     route: "/create-bites",
     label: "Create Bites",
   },
   {
-    icon: <FaUsers />,
-    route: "/communities",
-    label: "Communities",
+    icon: <FaHeart size={20}/>,
+    route: "/activity",
+    label: "Activity",
   },
+  
+  // {
+  //   icon: <FaUsers />,
+  //   route: "/communities",
+  //   label: "Communities",
+  // },
   {
-    icon: <FaUser />,
+    icon: <FaUser size={20}/>,
     route: "/profile",
     label: "Profile",
   },

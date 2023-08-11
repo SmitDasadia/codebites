@@ -35,32 +35,26 @@ const Header = () => {
         </p>
       </Link>
 
-      <div>
-        {user?.firstName}
-      </div>
+      
 
       <div className="flex items-center gap-1">
         <div className="block md:hidden">
           <SignedIn>
             <SignOutButton signOutCallback={() => router.push("/sign-in")}>
-              <div className="flex items-center gap-5 p-4 cursor-pointer hover:bg-blue hover:rounded-md">
-                <span className="text-light-1">
-                  <FiLogOut />
-                </span>
-                <p className="text-light-1 max-lg:hidden">Logout</p>
+              <div className="flex items-center gap-5 p-4 cursor-pointer ">
+              <button
+      className="flex items-center gap-2 px-4 py-2 bg-dark-2  text-white rounded  transition"
+      
+    >
+      <FiLogOut className="text-xl" />
+      Logout
+    </button>
               </div>
             </SignOutButton>
           </SignedIn>
         </div>
 
-        <OrganizationSwitcher
-          appearance={{
-            baseTheme: dark,
-            elements: {
-              organizationSwitcherTrigger: "py-2 px-4",
-            },
-          }}
-        />
+       
       </div>
     </nav>
   );

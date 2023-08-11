@@ -59,7 +59,7 @@
   }
 
   .topbar {
-    @apply fixed top-0 z-30 flex w-full items-center justify-between bg-dark-2 px-6 py-3;
+    @apply fixed top-0 z-30 flex w-full items-center justify-between bg-dark-1 px-6 py-3 xs:bg-dark-2;
   }
 
   .bottombar {
@@ -67,7 +67,7 @@
   }
 
   .bottombar_container {
-    @apply flex items-center justify-between gap-3 xs:gap-5;
+    @apply flex items-center justify-between gap-1 xs:gap-3;
   }
 
   .bottombar_link {
